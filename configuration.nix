@@ -8,7 +8,7 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
+  systemd.extraConfig = "DefaultLimitNOFILE=1048576";
   networking.hostName = "potatis";
 
   time.timeZone = "Europe/Stockholm";
