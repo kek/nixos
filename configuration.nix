@@ -106,6 +106,10 @@
     htop
     nmap
     direnv
+    bat
+    xorg.xkill
+    silver-searcher
+    gitAndTools.diff-so-fancy
   ];
 
   nixpkgs.config = {
