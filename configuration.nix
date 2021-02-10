@@ -50,8 +50,13 @@
   security.sudo.wheelNeedsPassword = false;
 
   programs.fish.enable = true;
+  programs.fish.promptInit = ''
+    any-nix-shell fish --info-right | source
+  '';
+
   services.keybase.enable = true;
   services.kbfs.enable = true;
+
   programs.steam.enable = true;
 
  fileSystems."/C" =
@@ -110,6 +115,11 @@
     xorg.xkill
     silver-searcher
     gitAndTools.diff-so-fancy
+    any-nix-shell
+    file
+    steam-run
+    unzip
+    jetbrains.idea-community
   ];
 
   nixpkgs.config = {
