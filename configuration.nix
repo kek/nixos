@@ -120,6 +120,10 @@
     steam-run
     unzip
     jetbrains.idea-community
+    i3
+    lm_sensors
+    hddtemp
+    fzf
   ];
 
   nixpkgs.config = {
