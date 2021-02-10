@@ -123,6 +123,7 @@
     lm_sensors
     hddtemp
     fzf
+    fd
   ];
 
   nixpkgs.config = {
