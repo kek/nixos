@@ -105,6 +105,7 @@
     gnumake
     htop
     nmap
+    direnv
   ];
 
   nixpkgs.config = {
@@ -114,5 +115,4 @@
   services.openssh.enable = true;
 
   system.stateVersion = "20.09";
-
 }
