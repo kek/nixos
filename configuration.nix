@@ -129,6 +129,8 @@
     i3status
     dmenu
     file
+    racket
+    ncdu
   ];
 
   fonts = {
