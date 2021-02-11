@@ -126,6 +126,9 @@
     fd
     lutris
     gitAndTools.tig
+    i3status
+    dmenu
+    file
   ];
 
   fonts = {
