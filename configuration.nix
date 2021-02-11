@@ -124,6 +124,8 @@
     hddtemp
     fzf
     fd
+    lutris
+    gitAndTools.tig
   ];
 
   nixpkgs.config = {
