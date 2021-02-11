@@ -58,25 +58,25 @@
 
   programs.steam.enable = true;
 
- fileSystems."/C" =
-   {
-     device = "/dev/disk/by-id/nvme-Samsung_SSD_970_EVO_Plus_500GB_S4EVNJ0N311518N-part2";
-     fsType = "ntfs";
-   };
+  fileSystems."/C" =
+    {
+      device = "/dev/disk/by-id/nvme-Samsung_SSD_970_EVO_Plus_500GB_S4EVNJ0N311518N-part2";
+      fsType = "ntfs";
+    };
 
- fileSystems."/D" =
-   {
-     device = "/dev/disk/by-id/ata-WDC_WD20EZAZ-00GGJB0_WD-WX21AC9HAYY0-part2";
-     fsType = "ntfs";
-   };
+  fileSystems."/D" =
+    {
+      device = "/dev/disk/by-id/ata-WDC_WD20EZAZ-00GGJB0_WD-WX21AC9HAYY0-part2";
+      fsType = "ntfs";
+    };
 
- fileSystems."/G" =
-   {
-     device = "/dev/disk/by-id/ata-Samsung_SSD_870_QVO_1TB_S5SVNG0N723350T-part1";
-     fsType = "ntfs";
-   };
+  fileSystems."/G" =
+    {
+      device = "/dev/disk/by-id/ata-Samsung_SSD_870_QVO_1TB_S5SVNG0N723350T-part1";
+      fsType = "ntfs";
+    };
 
- environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     discord
     emacs
     firefox
