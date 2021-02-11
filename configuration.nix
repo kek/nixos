@@ -128,6 +128,14 @@
     gitAndTools.tig
   ];
 
+  fonts = {
+    enableFontDir = true;
+    enableGhostscriptFonts = true;
+    fonts = with pkgs; [
+      hack-font
+    ];
+  };
+
   nixpkgs.config = {
     allowUnfree = true;
   };
