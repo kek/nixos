@@ -137,6 +137,14 @@
     racket
     ncdu
     xdotool
+    espeak
+    xdotool
+    xorg.xdpyinfo
+    wget
+    httpie
+    libnotify
+    et
+    mc
   ];
 
   fonts = {
