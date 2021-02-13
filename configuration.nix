@@ -35,6 +35,7 @@
 
   sound.enable = true;
   hardware.pulseaudio.enable = true;
+  hardware.opengl.driSupport32Bit = true;
 
   virtualisation.docker.enable = true;
   virtualisation.virtualbox.host.enable = true;
@@ -135,6 +136,7 @@
     file
     racket
     ncdu
+    xdotool
   ];
 
   fonts = {
