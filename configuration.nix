@@ -75,7 +75,7 @@
       fsType = "ntfs";
     };
 
-  fileSystems."/new-home" =
+  fileSystems."/home" =
     {
       device = "/dev/disk/by-id/ata-Samsung_SSD_870_QVO_1TB_S5SVNG0N723350T-part1";
       fsType = "ext4";
