@@ -146,6 +146,12 @@
     et
     mc
     gparted
+    tintin
+    tinyfugue
+    telnet
+    desktop-file-utils
+    spotify
+    gimp
   ];
 
   fonts = {
