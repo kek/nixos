@@ -1,3 +1,6 @@
+# https://nixos.wiki/wiki/Samba
+# https://gist.github.com/vy-let/a030c1079f09ecae4135aebf1e121ea6
+
 { config, lib, pkgs, modulesPath, ... }:
 {
   services.samba = {
