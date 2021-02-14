@@ -46,6 +46,9 @@
   virtualisation.libvirtd.enable = true;
   virtualisation.virtualbox.host.enableExtensionPack = true;
 
+  users.users.lm = {
+    isNormalUser = true;
+  };
   users.users.ke = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
@@ -84,6 +87,7 @@
   environment.systemPackages = with pkgs; [
     any-nix-shell
     bat
+    cifs-utils
     desktop-file-utils
     direnv
     discord
@@ -131,6 +135,7 @@
     pipewire
     qemu_kvm
     racket
+    samba
     silver-searcher
     slack
     spotify
@@ -143,7 +148,6 @@
     vim
     virt-manager
     vscode
-    wayvnc
     wget
     xdg-desktop-portal
     xdg-desktop-portal-gtk
