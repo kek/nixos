@@ -82,76 +82,76 @@
     };
 
   environment.systemPackages = with pkgs; [
+    any-nix-shell
+    bat
+    desktop-file-utils
+    direnv
     discord
+    dmenu
     emacs
+    espeak
+    et
+    fd
+    file
+    file
     firefox
     fish
+    fzf
+    gcc
+    gimp
     git
+    gitAndTools.diff-so-fancy
     gitAndTools.gh
+    gitAndTools.tig
+    gnumake
     gnupg
     google-chrome
+    google-chrome
+    gparted
     hack-font
+    hddtemp
+    htop
+    httpie
+    i3
+    i3status
+    jetbrains.idea-community
+    kbfs
     keybase
     keybase-gui
-    kbfs
     killall
+    libnotify
+    lm_sensors
+    lutris
+    mc
+    ncdu
+    nix-tree
+    nmap
     pass
     pinentry
-    slack
-    teams
-    vim
-    vscode
-    xsel
-    nix-tree
-    xdg-desktop-portal
-    xdg-desktop-portal-gtk
     pipewire
-    google-chrome
-    wayvnc
-    gcc
     qemu_kvm
-    virt-manager
-    gnumake
-    htop
-    nmap
-    direnv
-    bat
-    xorg.xkill
-    silver-searcher
-    gitAndTools.diff-so-fancy
-    any-nix-shell
-    file
-    steam-run
-    unzip
-    jetbrains.idea-community
-    i3
-    lm_sensors
-    hddtemp
-    fzf
-    fd
-    lutris
-    gitAndTools.tig
-    i3status
-    dmenu
-    file
     racket
-    ncdu
-    xdotool
-    espeak
-    xdotool
-    xorg.xdpyinfo
-    wget
-    httpie
-    libnotify
-    et
-    mc
-    gparted
+    silver-searcher
+    slack
+    spotify
+    steam-run
+    teams
+    telnet
     tintin
     tinyfugue
-    telnet
-    desktop-file-utils
-    spotify
-    gimp
+    unzip
+    vim
+    virt-manager
+    vscode
+    wayvnc
+    wget
+    xdg-desktop-portal
+    xdg-desktop-portal-gtk
+    xdotool
+    xdotool
+    xorg.xdpyinfo
+    xorg.xkill
+    xsel
   ];
 
   fonts = {
