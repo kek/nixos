@@ -8,6 +8,8 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   networking.hostName = "potatis";
   networking.extraHosts =
     ''
@@ -38,13 +40,13 @@
   hardware.opengl.driSupport32Bit = true;
 
   virtualisation.docker.enable = true;
-  virtualisation.virtualbox.host.enable = true;
+  # virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "ke" ];
   users.extraGroups.docker.members = [ "ke" ];
   users.extraGroups.libvirtd.members = [ "ke" ];
   boot.kernelModules = [ "kvm-amd" ];
   virtualisation.libvirtd.enable = true;
-  virtualisation.virtualbox.host.enableExtensionPack = true;
+  # virtualisation.virtualbox.host.enableExtensionPack = true;
 
   users.users.lm = {
     isNormalUser = true;
