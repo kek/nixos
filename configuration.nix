@@ -118,6 +118,7 @@
     httpie
     i3
     i3status
+    inotify-tools
     jetbrains.idea-community
     kbfs
     keybase
@@ -127,6 +128,7 @@
     lm_sensors
     lutris
     mc
+    mercurial
     ncdu
     nix-tree
     nmap
