@@ -116,6 +116,7 @@
     gparted
     hack-font
     hddtemp
+    heroku
     htop
     httpie
     i3
@@ -129,12 +130,14 @@
     libnotify
     lm_sensors
     lutris
+    lsof
     mc
     mercurial
     ncdu
     nix-tree
     nmap
     pass
+    pciutils
     pinentry
     pipewire
     qemu_kvm
