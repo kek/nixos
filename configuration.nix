@@ -134,8 +134,10 @@
     mc
     mercurial
     ncdu
+    niv
     nix-tree
     nmap
+    nodePackages.node2nix
     pass
     pciutils
     pinentry
