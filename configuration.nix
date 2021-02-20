@@ -1,5 +1,10 @@
 { config, pkgs, ... }:
 
+let
+  unstable = import
+    (builtins.fetchTarball https://github.com/kek/nixpkgs/tarball/master)
+    { config = config.nixpkgs.config; };
+in
 {
   imports =
     [
@@ -156,7 +161,6 @@
     unzip
     vim
     virt-manager
-    vscode
     wget
     xdg-desktop-portal
     xdg-desktop-portal-gtk
@@ -165,6 +169,7 @@
     xorg.xdpyinfo
     xorg.xkill
     xsel
+    unstable.vscode
   ];
 
   fonts = {
