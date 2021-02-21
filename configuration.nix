@@ -176,6 +176,26 @@ in
     unstable.vscode
   ];
 
+  nixpkgs.config.packageOverrides = pkgs: {
+    steam = pkgs.steam.override {
+      extraPkgs = pkgs: with pkgs; [
+        gnome3.gtk
+        zlib
+        dbus
+        freetype
+        glib
+        atk
+        cairo
+        gdk_pixbuf
+        pango
+        fontconfig
+        xorg.libxcb
+        wayland
+        libxkbcommon
+      ];
+    };
+  };
+
   fonts = {
     enableFontDir = true;
     enableGhostscriptFonts = true;
