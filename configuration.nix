@@ -164,6 +164,7 @@ in
     unzip
     vim
     virt-manager
+    vulkan-tools
     wget
     xdg-desktop-portal
     xdg-desktop-portal-gtk
