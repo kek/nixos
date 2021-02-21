@@ -45,7 +45,9 @@ in
 
   sound.enable = true;
   hardware.pulseaudio.enable = true;
+  hardware.opengl.enable = true;
   hardware.opengl.driSupport32Bit = true;
+  hardware.pulseaudio.support32Bit = true;
 
   virtualisation.docker.enable = true;
   # virtualisation.virtualbox.host.enable = true;
@@ -95,6 +97,7 @@ in
     };
 
   environment.systemPackages = with pkgs; [
+    amdvlk
     any-nix-shell
     bat
     cifs-utils
