@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 let
-  unstable = import
+  my = import
     (builtins.fetchTarball https://github.com/kek/nixpkgs/tarball/master)
     { config = config.nixpkgs.config; };
 in
@@ -13,7 +13,7 @@ in
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = unstable.linuxPackages_latest;
+  boot.kernelPackages = my.linuxPackages_latest;
 
   networking.hostName = "potatis";
   networking.extraHosts =
@@ -169,7 +169,7 @@ in
     xorg.xdpyinfo
     xorg.xkill
     xsel
-    unstable.vscode
+    my.vscode
   ];
 
   fonts = {
