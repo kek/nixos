@@ -4,6 +4,9 @@ let
   my = import
     (builtins.fetchTarball https://github.com/kek/nixpkgs/tarball/master)
     { config = config.nixpkgs.config; };
+  unstable = import
+    (builtins.fetchTarball https://github.com/NixOS/nixpkgs/tarball/master)
+    { config = config.nixpkgs.config; };
 in
 {
   imports =
@@ -169,7 +172,7 @@ in
     xorg.xdpyinfo
     xorg.xkill
     xsel
-    my.vscode
+    unstable.vscode
   ];
 
   fonts = {
