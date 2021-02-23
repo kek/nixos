@@ -101,11 +101,14 @@ in
     any-nix-shell
     bat
     cifs-utils
+    ctags
     desktop-file-utils
     direnv
     discord
     dmenu
+    elixir
     emacs
+    erlang
     espeak
     et
     fd
@@ -134,6 +137,7 @@ in
     i3status
     inotify-tools
     jetbrains.idea-community
+    kakoune
     kbfs
     keybase
     keybase-gui
